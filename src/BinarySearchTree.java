@@ -47,7 +47,7 @@ public class BinarySearchTree<T> {
 		} else {
 			if (!current.hasRight()) {
 				current.setRight(new BinaryNode<>(val));
-			}else {
+			} else {
 				addRcrsv(current.getRight(), val);
 			}
 		}
@@ -171,7 +171,6 @@ public class BinarySearchTree<T> {
 		return current;
 	}
 
-
 	public int calcHeight() {
 		return calcHeight(this.root);
 	}
@@ -229,8 +228,7 @@ public class BinarySearchTree<T> {
 			} else {
 				parent.setRight(current.getLeft());
 			}
-		}
-		else {
+		} else {
 			BinaryNode<Integer> successor = getSuccessor(current);
 
 			if (current == root)

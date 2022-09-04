@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Tester {
-	public static BinarySearchTree<?> new_tree = new BinarySearchTree();
+	public static BinarySearchTree<?> new_tree = new BinarySearchTree<>();
 	public static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -12,6 +12,7 @@ public class Tester {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
         new_tree.print();
 		deleteDemo();
 		System.out.println("Done....");
